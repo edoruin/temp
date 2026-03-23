@@ -13,7 +13,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment:
-      name: github-pages
+      name: Token_Hggnface
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
@@ -22,6 +22,7 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.TOKEN_HUGGINGFCE }}
         run: |
+          echo "Token length: ${#HF_TOKEN}"
           sed -i 's/HF_TOKEN_PLACEHOLDER/'"$HF_TOKEN"'/g' script.js
 
       - name: Upload artifact
