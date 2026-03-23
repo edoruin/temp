@@ -12,7 +12,7 @@ jobs:
 
       - name: Replace token placeholder
         env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_TOKEN: ${{ secrets.TOKEN_HUGGINGFCE }}
         run: |
           sed -i 's/HF_TOKEN_PLACEHOLDER/'"$HF_TOKEN"'/g' script.js
 
