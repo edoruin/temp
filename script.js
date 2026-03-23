@@ -1,4 +1,4 @@
-const HF_API_URL = "https://router.huggingface.co/meta-llama/Llama-3.2-1B-Instruct/v1/chat/completions";
+const HF_API_URL = "https://router.huggingface.co/v1/chat/completions";
 const HF_TOKEN = "HF_TOKEN_PLACEHOLDER";
 
 let skillsData = [];
@@ -198,6 +198,7 @@ PREGUNTA DEL ESTUDIANTE: ${userMessage}`;
         },
         method: 'POST',
         body: JSON.stringify({
+            model: "meta-llama/Llama-3.2-1B-Instruct",
             messages: [
                 { role: "system", content: SYSTEM_PROMPT },
                 { role: "system", content: "INFORMACIÓN DE RETOS DISPONIBLES:\n" + skillsContext },
