@@ -1,5 +1,13 @@
 const HF_API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2";
-let HF_TOKEN = "";
+function getToken() {
+    let token = localStorage.getItem('hf_token');
+    if (!token) {
+        token = prompt("Ingresa tu HuggingFace Token (solo se guarda en tu navegador):");
+        if (token) localStorage.setItem('hf_token', token);
+    }
+    return token;
+}
+
 let skillsData = [];
 
 const SYSTEM_PROMPT = `Eres un tutor amigable y paciente para estudiantes de 1ero de secundaria (11-12 años). 
@@ -147,12 +155,13 @@ async function sendMessage() {
     const sendBtn = document.getElementById('sendBtn');
     const status = document.getElementById('chatStatus');
     const message = input.value.trim();
+    const token = getToken();
 
     if (!message) return;
 
-    if (!HF_TOKEN) {
+    if (!token) {
         addMessage(message, 'user');
-        addMessage('⚠️ No hay token de API configurado. Por favor, configura HF_TOKEN en script.js', 'bot');
+        addMessage('⚠️ Necesitas un token de HuggingFace para usar el chatbot. Ingrésalo cuando te lo pida.', 'bot');
         input.value = '';
         return;
     }
@@ -164,7 +173,7 @@ async function sendMessage() {
     status.classList.add('loading');
 
     try {
-        const response = await getAgentResponse(message);
+        const response = await getAgentResponse(message, token);
         addMessage(response, 'bot');
     } catch (error) {
         console.error('Error:', error);
@@ -185,7 +194,7 @@ function addMessage(text, type) {
     messages.scrollTop = messages.scrollHeight;
 }
 
-async function getAgentResponse(userMessage) {
+async function getAgentResponse(userMessage, token) {
     const skillsContext = skillsData.map(skill => 
         `- ${skill.nombre} (Día ${skill.dia}): ${skill.descripcion}. Objetivos: ${skill.objetivo}. Consejos: ${skill.consejos.join(', ')}`
     ).join('\n');
@@ -201,7 +210,7 @@ RESPUESTA:`;
 
     const response = await fetch(HF_API_URL, {
         headers: {
-            'Authorization': `Bearer ${HF_TOKEN}`,
+            'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'
         },
         method: 'POST',
