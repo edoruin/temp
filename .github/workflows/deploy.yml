@@ -22,7 +22,6 @@ jobs:
         run: |
           echo "Checking secrets..."
           echo "Secret value: ${{ secrets.TOKEN_HUGGINGFCE }}"
-          echo "Token length: ${#secrets.TOKEN_HUGGINGFCE}"
           sed -i 's/HF_TOKEN_PLACEHOLDER/'"${{ secrets.TOKEN_HUGGINGFCE }}"'/g' script.js
           echo "Replacement done"
 
