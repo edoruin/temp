@@ -49,7 +49,6 @@ async function loadRetos() {
         const response = await fetch('data/links.json');
         const data = await response.json();
         renderRetos(data.retos);
-        loadProgress();
     } catch (error) {
         console.error('Error cargando retos:', error);
         document.getElementById('retosGrid').innerHTML = '<p>Error al cargar los retos</p>';
