@@ -62,7 +62,7 @@ function renderRetos(retos) {
 
     retos.forEach(reto => {
         const card = document.createElement('div');
-        card.className = `reto-card ${isRetoCompleted(reto.id) ? 'completed' : ''}`;
+        card.className = 'reto-card';
         
         card.innerHTML = `
             <div class="reto-header">
@@ -76,9 +76,8 @@ function renderRetos(retos) {
                     <span class="reto-tag">${reto.fase}</span>
                     <span class="reto-tag">${reto.categoria}</span>
                 </div>
-                <button class="reto-btn ${isRetoCompleted(reto.id) ? 'completed-btn' : ''}" 
-                        onclick="openReto(${reto.id}, '${reto.url}')">
-                    ${isRetoCompleted(reto.id) ? '✓ Completado' : '🎮 ¡Empezar!'}
+                <button class="reto-btn" onclick="openReto(${reto.id}, '${reto.url}')">
+                    🎮 ¡Empezar!
                 </button>
             </div>
         `;
@@ -92,11 +91,6 @@ function isRetoCompleted(id) {
 }
 
 function openReto(id, url) {
-    if (!isRetoCompleted(id)) {
-        if (confirm('¿Ya completaste este reto? Si es así, lo marcaré como completado.')) {
-            markRetoCompleted(id);
-        }
-    }
     window.open(url, '_blank');
 }
 
