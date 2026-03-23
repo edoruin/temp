@@ -20,10 +20,11 @@ jobs:
 
       - name: Replace token placeholder
         run: |
-          echo "Checking secrets..."
-          echo "Secret value: ${{ secrets.TOKEN_HUGGINGFCE }}"
-          sed -i 's/HF_TOKEN_PLACEHOLDER/'"${{ secrets.TOKEN_HUGGINGFCE }}"'/g' script.js
-          echo "Replacement done"
+          TOKEN="${{ secrets.TOKEN_HUGGINGFCE }}"
+          echo "Replacing token..."
+          sed -i "s/HF_TOKEN_PLACEHOLDER/$TOKEN/g" script.js
+          echo "Done. Checking result:"
+          grep -o "hf_" script.js | head -1 || echo "Token NOT found!"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
