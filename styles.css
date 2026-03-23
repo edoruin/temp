@@ -373,3 +373,10 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
+.quejas-container {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+}
