@@ -1,12 +1,5 @@
 const HF_API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2";
-function getToken() {
-    let token = localStorage.getItem('hf_token');
-    if (!token) {
-        token = prompt("Ingresa tu HuggingFace Token (solo se guarda en tu navegador):");
-        if (token) localStorage.setItem('hf_token', token);
-    }
-    return token;
-}
+const HF_TOKEN = "HF_TOKEN_PLACEHOLDER";
 
 let skillsData = [];
 
@@ -155,11 +148,10 @@ async function sendMessage() {
     const sendBtn = document.getElementById('sendBtn');
     const status = document.getElementById('chatStatus');
     const message = input.value.trim();
-    const token = getToken();
 
     if (!message) return;
 
-    if (!token) {
+    if (!HF_TOKEN || HF_TOKEN === "HF_TOKEN_PLACEHOLDER") {
         addMessage(message, 'user');
         addMessage('⚠️ Necesitas un token de HuggingFace para usar el chatbot. Ingrésalo cuando te lo pida.', 'bot');
         input.value = '';
@@ -173,7 +165,7 @@ async function sendMessage() {
     status.classList.add('loading');
 
     try {
-        const response = await getAgentResponse(message, token);
+        const response = await getAgentResponse(message);
         addMessage(response, 'bot');
     } catch (error) {
         console.error('Error:', error);
@@ -194,7 +186,7 @@ function addMessage(text, type) {
     messages.scrollTop = messages.scrollHeight;
 }
 
-async function getAgentResponse(userMessage, token) {
+async function getAgentResponse(userMessage) {
     const skillsContext = skillsData.map(skill => 
         `- ${skill.nombre} (Día ${skill.dia}): ${skill.descripcion}. Objetivos: ${skill.objetivo}. Consejos: ${skill.consejos.join(', ')}`
     ).join('\n');
@@ -210,7 +202,7 @@ RESPUESTA:`;
 
     const response = await fetch(HF_API_URL, {
         headers: {
-            'Authorization': `Bearer ${token}`,
+            'Authorization': `Bearer ${HF_TOKEN}`,
             'Content-Type': 'application/json'
         },
         method: 'POST',
