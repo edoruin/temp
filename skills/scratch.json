@@ -1,0 +1,18 @@
+{
+  "nombre": "Scratch - Gema y Condicionales",
+  "dia": 5,
+  "descripcion": "Creación de un juego donde colectas gemas usando lógica condicional",
+  "url": "https://scratch.mit.edu/projects/249143200/editor?tutorial=animate-an-adventure-game",
+  "fase": "Ideación II",
+  "objetivo": "Aprender lógica condicional: Si-Entonces",
+  "conceptos": ["Condicionales", "Si-Entonces", "Variables", "Puntos"],
+  "consejos": [
+    "Usa el bloque 'si...' para tomar decisiones en el juego",
+    "Las gemas representan puntos de reciclaje",
+    "Experimenta con diferentes condiciones"
+  ],
+  "preguntas_frecuentes": {
+    "¿Qué es un condicional?": "Es una instrucción que dice: 'SI pasa esto, ENTONCES haz esto otro'. Ejemplo: 'SI tocas una gema, ENTONCES suma puntos'.",
+    "¿Cómo recojo gemas?": "Usa bloques de control que detecten cuando el personaje toque una gema, luego suma puntos."
+  }
+}

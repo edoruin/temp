@@ -1,0 +1,100 @@
+{
+  "retos": [
+    {
+      "id": 1,
+      "dia": 1,
+      "titulo": "AI for Birds",
+      "descripcion": "Hacer que un pajarito vuele con AI. Introducción a la IA: ¿Cómo aprenden las máquinas a imitar la naturaleza?",
+      "url": "https://app.codemonkey.com/courses/ai-mini-course#1",
+      "icono": "🐦",
+      "categoria": "Machine Learning",
+      "fase": "Descubrimiento",
+      "objetivo": "Diagnóstico: Introducción a la IA",
+      "indicador": "Capacidad de distinguir entre datos limpios y ruidosos"
+    },
+    {
+      "id": 2,
+      "dia": 2,
+      "titulo": "IA para los Océanos",
+      "descripcion": "Modelos de Clasificación para salvar el mar! Entrenamiento de Datos: Clasificación de desechos vs. vida marina.",
+      "url": "https://studio.code.org/courses/oceans/units/1/lessons/1/levels/2",
+      "icono": "🌊",
+      "categoria": "Machine Learning",
+      "fase": "Empatía",
+      "objetivo": "Entrenamiento de Datos y análisis del sesgo en la IA",
+      "indicador": "Capacidad de distinguir entre datos limpios y ruidosos"
+    },
+    {
+      "id": 3,
+      "dia": 3,
+      "titulo": "Blockly Games - Puzzles",
+      "descripcion": "Completa los rompecabezas. Lógica de Estructura: Resolución de rompecabezas para definir reglas lógicas.",
+      "url": "https://blockly.games/",
+      "icono": "🧩",
+      "categoria": "Lógica",
+      "fase": "Definición",
+      "objetivo": "Resolución de rompecabezas lógicos",
+      "indicador": "Uso correcto de bloques de Repetir"
+    },
+    {
+      "id": 4,
+      "dia": 4,
+      "titulo": "CodeMonkey - Salto del Mono",
+      "descripcion": "Hacer que un mono salte! Algoritmos de Movimiento: Diseño de trayectorias seguras para especies en peligro.",
+      "url": "https://app.codemonkey.com/courses/blocks-hour-of-code#1",
+      "icono": "🐒",
+      "categoria": "Algoritmos",
+      "fase": "Ideación I",
+      "objetivo": "Diseñar trayectorias seguras",
+      "indicador": "Uso correcto de bloques de Repetir y Si-Entonces"
+    },
+    {
+      "id": 5,
+      "dia": 5,
+      "titulo": "Scratch - Gema y Condicionales",
+      "descripcion": "Coleccionar gemas con condicionales! Lógica Condicional: Recolección de recursos como metáfora de puntos de reciclaje.",
+      "url": "https://scratch.mit.edu/projects/249143200/editor?tutorial=animate-an-adventure-game",
+      "icono": "💎",
+      "categoria": "Lógica Condicional",
+      "fase": "Ideación II",
+      "objetivo": "Recolección de recursos con condicionales",
+      "indicador": "Uso correcto de bloques de Si-Entonces"
+    },
+    {
+      "id": 6,
+      "dia": 6,
+      "titulo": "Code.org - Arte con Código",
+      "descripcion": "Haz arte con código. Interfaz de Usuario (UI): Programación de patrones visuales y estéticos.",
+      "url": "https://studio.code.org/courses/artist/units/1/lessons/1/levels/1",
+      "icono": "🎨",
+      "categoria": "Arte Digital",
+      "fase": "Prototipado (Arte)",
+      "objetivo": "Crear patrones visuales",
+      "indicador": "Integración de creatividad estética con funcionalidad lógica"
+    },
+    {
+      "id": 7,
+      "dia": 7,
+      "titulo": "CodeCombat - Game Dev",
+      "descripcion": "CODECOMBAT! Arquitectura Maker: Construcción del entorno de juego y retos técnicos de programación real.",
+      "url": "https://codecombat.com/play/game-dev-hoc-2?hour_of_code=true#",
+      "icono": "⚔️",
+      "categoria": "Desarrollo de Juegos",
+      "fase": "Desarrollo Técnico",
+      "objetivo": "Construir entorno de juego",
+      "indicador": "Integración efectiva de creatividad con funcionalidad"
+    },
+    {
+      "id": 8,
+      "dia": 8,
+      "titulo": "Code.org - Sports Game",
+      "descripcion": "Crea tu propio juego de deporte! Iteración Final: Personalización de reglas deportivas para un juego inclusivo.",
+      "url": "https://studio.code.org/courses/sports/units/1/lessons/1/levels/1?lang=es-MX",
+      "icono": "⚽",
+      "categoria": "Desarrollo de Juegos",
+      "fase": "Testeo y Entrega",
+      "objetivo": "Personalizar reglas deportivas",
+      "indicador": "Reflexión final sobre cómo el juego ayuda a entender la problemática ecológica"
+    }
+  ]
+}

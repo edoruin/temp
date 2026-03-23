@@ -1,0 +1,78 @@
+UNIDAD DE APRENDIZAJE: PROGRAMACIÓN Y DISEÑO DE SOLUCIONES (DESIGN THINKING)
+1. IDENTIFICACIÓN Y CONTEXTO
+Campo
+Detalle
+Centro Educativo
+Edwin Agustín
+Grado
+1ro de Secundaria (Primer Ciclo)
+Asignatura
+Programación
+Frecuencia
+1 vez por semana (8 Sesiones)
+Problemática Central
+"Tecnología con Propósito: Salvando el Ecosistema y la Creatividad". Los estudiantes diseñarán soluciones digitales para proteger el medio ambiente y fomentar el aprendizaje mediante el juego.
+
+Competencias Maker / Design Thinking
+Empatía Tecnológica: Entender problemas globales (IA y ecología).
+Prototipado Rápido: Capacidad de fallar rápido y corregir mediante lógica de bloques.
+Mentalidad de Crecimiento: Superación de retos de dificultad progresiva.
+2. CRONOGRAMA DE SESIONES (8 SEMANAS)
+Día / Sesión
+Fase Design Thinking
+Recurso / Herramienta
+Actividad y Reto Maker
+Día 1
+Descubrimiento
+AI for Birds / Machine Learning
+Diagnóstico: Introducción a la IA. ¿Cómo aprenden las máquinas a imitar la naturaleza?
+Día 2
+Empatía
+IA para los Océanos (Code.org)
+Entrenamiento de Datos: Clasificación de desechos vs. vida marina. Análisis del sesgo en la IA.
+Día 3
+Definición
+Blockly Games - Puzzles
+Lógica de Estructura: Resolución de rompecabezas para definir las reglas de una solución lógica.
+Día 4
+Ideación I
+CodeMonkey - Salto del Mono
+Algoritmos de Movimiento: Diseño de trayectorias seguras para especies en peligro (simulación).
+Día 5
+Ideación II
+Scratch - Gema y Condicionales
+Lógica Condicional: Recolección de recursos (gemas) como metáfora de puntos de reciclaje.
+Día 6
+Prototipado (Arte)
+Code.org - Arte con Código
+Interfaz de Usuario (UI): Programación de patrones visuales y estéticos para el producto final.
+Día 7
+Desarrollo Técnico
+CodeCombat - Game Dev
+Arquitectura Maker: Construcción del entorno de juego y retos técnicos de programación real.
+Día 8
+Testeo y Entrega
+Code.org - Sports Game
+Iteración Final: Personalización de reglas deportivas para un juego inclusivo y cierre del proyecto.
+
+3. ESTRATEGIAS DE EVALUACIÓN (INDICADORES)
+Periodo
+Indicador de Logro
+Día 1-2
+Capacidad de distinguir entre datos limpios y ruidosos en el entrenamiento de IA.
+Día 3-5
+Uso correcto de bloques de "Repetir" y "Si - Entonces" en los desafíos propuestos.
+Día 6-7
+Integración efectiva de la creatividad estética con la funcionalidad lógica del programa.
+Día 8
+Reflexión Final: Argumentación sobre cómo el juego/programa ayuda a entender la problemática ecológica.
+
+4. DESARROLLO DE HABILIDADES BLANDAS (MAKERSPACE)
+Pensamiento Crítico: Desarrollado al enfrentar y depurar errores en entornos como CodeCombat y Blockly.
+Resolución de Problemas: Cada sesión actúa como un Scaffolding (andamiaje) para la complejidad de la siguiente.
+Autonomía: El uso de tutoriales interactivos fomenta el aprendizaje autodirigido y la investigación.
+5. RECURSOS NECESARIOS
+Hardware: Acceso individual a terminales (computadoras/laptops) con conexión a internet.
+Software: Navegador web actualizado para acceder a plataformas interactivas.
+Material de Registro: Diarios de diseño (físicos o digitales) para documentar la lógica de cada sesión.
+

@@ -1,0 +1,18 @@
+{
+  "nombre": "IA para los Océanos",
+  "dia": 2,
+  "descripcion": "Entrenamiento de datos para clasificar desechos vs. vida marina, analizando el sesgo en la IA",
+  "url": "https://studio.code.org/courses/oceans/units/1/lessons/1/levels/2",
+  "fase": "Empatía",
+  "objetivo": "Clasificación de datos y análisis del sesgo en IA",
+  "conceptos": ["Clasificación de datos", "IA", "Sesgo algorítmico", "Datos limpios vs ruido"],
+  "consejos": [
+    "Separa los objetos limpios de los que tienen ruido",
+    "Observa cómo la IA puede confundirse si los datos no son claros",
+    " Imagina cómo ayudarías a limpiar el océano"
+  ],
+  "preguntas_frecuentes": {
+    "¿Qué es sesgo en IA?": "El sesgo ocurre cuando la IA aprende de datos que no son justos o completos. Por ejemplo, si solo le enseñas peces de un tipo, no conocerá otros.",
+    "¿Por qué importan los datos limpios?": "Si los datos tienen errores o están desordenados, la IA也会学错 (también aprenderá mal)."
+  }
+}

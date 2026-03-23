@@ -1,0 +1,18 @@
+{
+  "nombre": "CodeCombat - Game Dev",
+  "dia": 7,
+  "descripcion": "Desarrollo de juegos con programación real en un ambiente estilizado",
+  "url": "https://codecombat.com/play/game-dev-hoc-2?hour_of_code=true#",
+  "fase": "Desarrollo Técnico",
+  "objetivo": "Construir el entorno de juego y resolver retos técnicos de programación",
+  "conceptos": ["Desarrollo de juegos", "Programación real", "Arquitectura", "Lógica avanzada"],
+  "consejos": [
+    "Lee cuidadosamente cada nivel",
+    "No temas equivocarte - ¡los errores teach you!",
+    "Usa la documentación si te atascas"
+  ],
+  "preguntas_frecuentes": {
+    "¿Qué es desarrollo de juegos?": "Es crear juegos usando código. Defines reglas, personajes, y cómo interactúan.",
+    "¿Necesito saber mucho código?": "¡No! CodeCombat te enseña mientras juegas. Cada nivel introduce algo nuevo."
+  }
+}

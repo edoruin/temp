@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación con Propósito</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>🌱 Programación con Propósito</h1>
+            <p class="subtitle">¡Aprende a programar salvando el ecosistema!</p>
+        </div>
+    </header>
+
+    <nav class="tabs">
+        <button class="tab-btn active" data-tab="retos">🎮 Los Retos</button>
+        <button class="tab-btn" data-tab="chat">💬 Chat de Ayuda</button>
+    </nav>
+
+    <main>
+        <!-- Sección de Retos -->
+        <section id="retos" class="tab-content active">
+            <div class="intro-section">
+                <h2>🚀 ¡Bienvenido a tu aventura de programación!</h2>
+                <p>Cada día tienes un nuevo reto. Haz clic en las tarjetas para empezar.</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill">0%</div>
+                </div>
+                <p class="progress-text">Progreso: <span id="progressText">0</span> de 8 retos completados</p>
+            </div>
+            <div class="retos-grid" id="retosGrid"></div>
+        </section>
+
+        <!-- Sección de Chat -->
+        <section id="chat" class="tab-content">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="bot-avatar">🤖</div>
+                    <div class="bot-info">
+                        <h3>Ayudante de Programación</h3>
+                        <p>¡Estoy aquí para ayudarte con los retos!</p>
+                    </div>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <p>¡Hola! 👋 Soy tu asistente de programación. ¿Tienes dudas sobre algún reto? ¡Pregúntame!</p>
+                    </div>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" id="chatInput" placeholder="Escribe tu pregunta...">
+                    <button id="sendBtn">Enviar</button>
+                </div>
+                <div class="chat-status" id="chatStatus"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

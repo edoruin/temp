@@ -1,0 +1,18 @@
+{
+  "nombre": "AI for Birds",
+  "dia": 1,
+  "descripcion": "Introducción a la IA donde los estudiantes hacen que un pajarito vuele usando inteligencia artificial",
+  "url": "https://app.codemonkey.com/courses/ai-mini-course#1",
+  "fase": "Descubrimiento",
+  "objetivo": "Entender cómo las máquinas aprenden a imitar la naturaleza",
+  "conceptos": ["Inteligencia Artificial", "Machine Learning", "Datos de entrenamiento", "Patrones"],
+  "consejos": [
+    "Observa cómo el pájaro responde a diferentes estímulos",
+    "Prueba con diferentes datos de entrenamiento",
+    "Los datos limpios dan mejores resultados"
+  ],
+  "preguntas_frecuentes": {
+    "¿Qué es IA?": "IA significa Inteligencia Artificial. Es cuando las computadoras aprenden a hacer tareas que normalmente requieren inteligencia humana, como reconocer imágenes o entender lenguaje.",
+    "¿Cómo aprende una máquina?": "Las máquinas aprenden de ejemplos. Le das muchos ejemplos de algo (como fotos de pájaros) y ella aprende a reconocer patrones."
+  }
+}

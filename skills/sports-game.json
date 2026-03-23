@@ -1,0 +1,18 @@
+{
+  "nombre": "Code.org - Sports Game",
+  "dia": 8,
+  "descripcion": "Creación y personalización de juegos deportivos",
+  "url": "https://studio.code.org/courses/sports/units/1/lessons/1/levels/1?lang=es-MX",
+  "fase": "Testeo y Entrega",
+  "objetivo": "Personalizar reglas deportivas para un juego inclusivo y cerrar el proyecto",
+  "conceptos": ["Deportes", "Personalización", "Inclusión", "Iteración"],
+  "consejos": [
+    "Piensa en cómo hacer el juego accesible para todos",
+    "Prueba tu juego y mejóralo basándote en la experiencia",
+    "¡Felicidades por llegar al final!"
+  ],
+  "preguntas_frecuentes": {
+    "¿Qué es iteración?": "Es mejorar algo haciendo cambios poco a poco. Haces una versión, la pruebas, y la mejoras.",
+    "¿Qué hace a un juego inclusivo?": "Un juego inclusivo puede ser joué par todos, sin importar habilidades. Piensa en opciones de accesibilidad."
+  }
+}

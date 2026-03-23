@@ -1,0 +1,18 @@
+{
+  "nombre": "Blockly Games - Puzzles",
+  "dia": 3,
+  "descripcion": "Resolución de rompecabezas usando programación con bloques visuales",
+  "url": "https://blockly.games/",
+  "fase": "Definición",
+  "objetivo": "Aprender lógica de estructura y definir reglas lógicas",
+  "conceptos": ["Bloques de código", "Lógica", "Secuencias", "Repetir"],
+  "consejos": [
+    "Observa qué hace cada bloque antes de usarlo",
+    "Prueba ejecutar tu código frecuentemente",
+    "Si no funciona, ¡es parte del aprendizaje! Intenta de otra forma"
+  ],
+  "preguntas_frecuentes": {
+    "¿Qué son los bloques de código?": "Son piezas visuales que representan instrucciones de programación. Los juntes como piezas de LEGO para crear programas.",
+    "¿Qué es un bucle o repetir?": "Es cuando quieres hacer algo muchas veces sin escribirlo cada vez. Por ejemplo: 'Repetir 5 veces: mover a la derecha'"
+  }
+}

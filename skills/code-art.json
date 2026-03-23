@@ -1,0 +1,18 @@
+{
+  "nombre": "Code.org - Arte con Código",
+  "dia": 6,
+  "descripcion": "Creación de arte visual usando programación de patrones",
+  "url": "https://studio.code.org/courses/artist/units/1/lessons/1/levels/1",
+  "fase": "Prototipado (Arte)",
+  "objetivo": "Programar patrones visuales y estéticos para el producto final",
+  "conceptos": ["Arte digital", "Patrones", "UI (Interfaz de Usuario)", "Colores"],
+  "consejos": [
+    "Experimenta con diferentes formas y colores",
+    "Los patrones repetitivos usan bloqes de 'repetir'",
+    "¡Tu creatividad define el resultado!"
+  ],
+  "preguntas_frecuentes": {
+    "¿Qué es UI?": "UI significa Interfaz de Usuario. Es lo que el usuario ve y con lo que interactúa: colores, botones, dibujos.",
+    "¿Cómo hago figuras complejas?": "简单 (Simple): combina formas básicas. ¡Usa la imaginación!"
+  }
+}

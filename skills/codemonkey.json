@@ -1,0 +1,18 @@
+{
+  "nombre": "CodeMonkey - Salto del Mono",
+  "dia": 4,
+  "descripcion": "Diseño de algoritmos de movimiento para guiar a un mono a través de obstáculos",
+  "url": "https://app.codemonkey.com/courses/blocks-hour-of-code#1",
+  "fase": "Ideación I",
+  "objetivo": "Diseñar trayectorias seguras para especies en peligro",
+  "conceptos": ["Algoritmos", "Movimiento", "Trayectorias", "Bloques de repetición"],
+  "consejos": [
+    "Planifica la ruta antes de escribir el código",
+    "Usa el bloque 'repetir' para tareas repetitivas",
+    "Cada paso cuenta - ¡el mono depende de tus instrucciones!"
+  ],
+  "preguntas_frecuentes": {
+    "¿Qué es un algoritmo?": "Un algoritmo es como una receta: una serie de pasos que sigues para completar una tarea.",
+    "¿Cómo hago que el mono pase obstáculos?": "Usa bloques de movimiento como 'avanzar' y 'girar'. Piensa en el camino más seguro."
+  }
+}
