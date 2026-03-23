@@ -144,7 +144,7 @@ async function sendMessage() {
 
     if (!message) return;
 
-    if (!HF_TOKEN || HF_TOKEN === "HF_TOKEN_PLACEHOLDER") {
+    if (!HF_TOKEN || HF_TOKEN.length < 10) {
         addMessage(message, 'user');
         addMessage('⚠️ Necesitas un token de HuggingFace para usar el chatbot. Ingrésalo cuando te lo pida.', 'bot');
         input.value = '';
