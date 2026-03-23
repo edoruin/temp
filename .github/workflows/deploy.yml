@@ -19,11 +19,12 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Replace token placeholder
-        env:
-          HF_TOKEN: ${{ secrets.TOKEN_HUGGINGFCE }}
         run: |
-          echo "Token length: ${#HF_TOKEN}"
-          sed -i 's/HF_TOKEN_PLACEHOLDER/'"$HF_TOKEN"'/g' script.js
+          echo "Checking secrets..."
+          echo "Secret value: ${{ secrets.TOKEN_HUGGINGFCE }}"
+          echo "Token length: ${#secrets.TOKEN_HUGGINGFCE}"
+          sed -i 's/HF_TOKEN_PLACEHOLDER/'"${{ secrets.TOKEN_HUGGINGFCE }}"'/g' script.js
+          echo "Replacement done"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
