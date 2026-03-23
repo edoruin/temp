@@ -1,4 +1,4 @@
-const HF_API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2";
+const HF_API_URL = "https://router.huggingface.co/mistralai/Mistral-7B-Instruct-v0.2/v1/chat/completions";
 const HF_TOKEN = "HF_TOKEN_PLACEHOLDER";
 
 let skillsData = [];
@@ -189,9 +189,7 @@ async function getAgentResponse(userMessage) {
 INFORMACIÓN DE RETOS DISPONIBLES:
 ${skillsContext}
 
-PREGUNTA DEL ESTUDIANTE: ${userMessage}
-
-RESPUESTA:`;
+PREGUNTA DEL ESTUDIANTE: ${userMessage}`;
 
     const response = await fetch(HF_API_URL, {
         headers: {
@@ -200,22 +198,23 @@ RESPUESTA:`;
         },
         method: 'POST',
         body: JSON.stringify({
-            inputs: fullPrompt,
-            parameters: {
-                max_new_tokens: 300,
-                temperature: 0.7,
-                top_p: 0.9,
-                return_full_text: false
-            }
+            messages: [
+                { role: "system", content: SYSTEM_PROMPT },
+                { role: "system", content: "INFORMACIÓN DE RETOS DISPONIBLES:\n" + skillsContext },
+                { role: "user", content: userMessage }
+            ],
+            max_tokens: 300,
+            temperature: 0.7
         })
     });
 
     if (!response.ok) {
-        throw new Error('API request failed');
+        const errorText = await response.text();
+        throw new Error('API request failed: ' + errorText);
     }
 
     const result = await response.json();
-    return result[0].generated_text || 'Lo siento, no pude generar una respuesta.';
+    return result.choices?.[0]?.message?.content || result[0]?.generated_text || 'Lo siento, no pude generar una respuesta.';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
