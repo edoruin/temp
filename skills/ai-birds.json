@@ -1,7 +1,7 @@
 {
   "nombre": "AI for Birds",
   "dia": 1,
-  "descripcion": "Introducción a la IA donde los estudiantes hacen que un pajarito vuele usando inteligencia artificial",
+  "descripcion": "Juego de plataformas donde un pajarito se mueve solo y al hacer un gesto frente a la cámara (como levantar la mano) el pájaro salta. Sin gesto, no pasa nada. Se programa utilizando bloques visuales.",
   "url": "https://app.codemonkey.com/courses/ai-mini-course#1",
   "fase": "Descubrimiento",
   "objetivo": "Entender cómo las máquinas aprenden a imitar la naturaleza",
