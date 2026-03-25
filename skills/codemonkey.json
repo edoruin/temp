@@ -14,5 +14,11 @@
   "preguntas_frecuentes": {
     "¿Qué es un algoritmo?": "Un algoritmo es como una receta: una serie de pasos que sigues para completar una tarea.",
     "¿Cómo hago que el mono pase obstáculos?": "Usa bloques de movimiento como 'avanzar' y 'girar'. Piensa en el camino más seguro."
+  },
+  "nota_importante_idioma": {
+    "problema": "Al crear clases para modelos de clasificación (como 'levantar manos' y 'bajar manos'), si el idioma está en español, puede causar problemas técnicos.",
+    "solucion": "Los nombres de las clases y variables SIEMPRE deben estar en INGLÉS (ej: 'raising_hands', 'standing').",
+    "accion": "Si un estudiante menciona que no le funciona o tiene errores al crear las clases, pregúntale si puso los nombres en español. Dile que debe cambiarlos a inglés.",
+    "si_no_saben": "Si los estudiantes no saben cómo escribir las clases en inglés, deben llamar al profesor para ayudarles."
   }
 }
